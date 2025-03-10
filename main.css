@@ -1,0 +1,140 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: rgba(25, 97, 239, 0.695);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(25, 97, 239, 0.695);
+}
+
+nav a {
+    display: block;
+    text-decoration: underline;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 106);
+    text-decoration: solid;
+    background-color: rgb(0, 0, 0);
+}
+
+#sidebar {
+    margin: 10px;
+    width: 30%;
+    background-color: rgba(25, 97, 239, 0.695);
+}
+
+#page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-flow: row;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.mordecai, .skips, .rigby {
+    box-shadow: 5px 5px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.mordecai {
+    width: 444px;
+    height: 385px;
+}
+
+.skips {
+    width: 445px;
+    height: 425px;
+}
+
+.rigby {
+    width: 337px;
+    height: 455px;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    background-color: #ffffff;
+}
+
+aside {
+    display: flex;
+    align-items: baseline;
+}
+
+li {
+    color: white;
+}
+
+
+@media ONLY screen and (max-width: 900px) {
+    #page {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mordecai, .skips, .rigby {
+        width: 90%;
+        height: auto;
+    }
+
+    #sidebar {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+}
+
+
+@media ONLY screen and (max-width: 600px) {
+    header {
+        background-color: black;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mordecai, .skips, .rigby {
+        width: 100%;
+        height: auto;
+    }
+
+    #sidebar {
+        width: 100%; 
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+}
